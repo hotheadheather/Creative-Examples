@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+
+}
+
+div {
+
+    text-align: center;
+  }
+
+imageNum {
+  width: 400px;
+
+}
+
+randNum {
+  width: 400px;
+
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+squares {
+    text-align: center;
+
+}

@@ -1,0 +1,314 @@
+/* Global styles
+------------------------------------*/
+
+/* color scheme sampled from profile photo */
+/*
+#3648C8-violet-blue
+#8151A9-royal purple
+#B02E41-French wine
+#FA8B4A-Mango-Tango
+#8CB071- Asparagus
+*/
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Covered By Your Grace', cursive;
+
+
+h1 {
+  font-size: 100px;
+  margin-top: 0;
+
+}
+
+h1 {
+  font-size: 100px;
+  margin-top: 0;
+
+}
+
+
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+}
+.col-narrow {
+  width: 30%;
+  float: right;
+  min-height: 175px;
+}
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+}
+
+/* you need to spell column completey out and work with placing the columns correct in index file
+*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  background: #FA8B4A;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header & Footer
+------------------------------------*/
+header, footer {
+
+  color: #Black;
+}
+header {
+  padding-top: 40px;
+}
+
+header h1, header h2 {
+  color: #Black;
+  margin: 0;
+}
+
+
+
+/* Header styles only */
+header {
+  text-align: center;
+  border: 1px solid black;
+}
+h2:before {
+  content:'\1419';
+  font-size: 24px;
+  font-weight: bold;
+}
+h2:after {
+  content:'\1407';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+/* Footer styles only */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Navigation
+------------------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  font-family: 'Covered By Your Grace', cursive;
+  width: 100%
+
+}
+/* I didnt need to center align mine..it was already centered.. i wonder why? */
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+}
+/* Work Experience
+------------------------------------*/
+
+/*.work {
+  background-color: #8151A9;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+.work:hover {
+  background-color: #B02E41;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+} */
+
+.work {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #8151A9;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+
+
+.clay {
+  background-color: #3648C8;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+.clay:hover {
+  background-color:  #FA8B4A;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+/*.glass {
+  background-color:#B02E41;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+
+}
+.glass:hover {
+  background-color:#8CB071;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+
+} */
+.glass {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+0% {
+  background-color: #B02E41;
+}
+100% {
+  background-color: #8CB071;
+  }
+}
+/* Education
+------------------------------------*/
+
+
+.education {
+    background: #FA8B4A;
+    border: 1px solid black;
+    text-align: center;
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+                 url(../images/toronto2) no repeat fixed;
+                 background-size: cover;
+
+                  /* this css doesn't seem to be talking to the image. Do you know why? */
+}
+.education:hover {
+    background-color: #B02E41;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+/* Footer
+------------------------------------*/
+/*.contact {
+    background: #8CB071;
+    border: 1px solid black;
+    text-align: center;
+
+
+}
+.contact:hover {
+    background: #8151A9;
+    border: 1px solid black;
+    text-align: center;
+  } */
+  .contact {
+    animation: pulse 5s infinite;
+  }
+
+  @keyframes pulse {
+  0% {
+    background-color:#8CB071;
+  }
+  100% {
+    background-color: #8151A9;
+    }
+  }
+
+
+  /* Media Queries */
+
+@media screen and (max-width: 959px) {
+
+  #.col-narrow {
+  width: 70%;
+}
+  #.col-wide {
+  width: 30%;
+}
+
+@media screen and (max-width: 640px;) {
+  #.col-narrow {
+  width: 100%;
+}
+  #.col-wide {
+  width: 100%;
+  }
+
+}
+
+
+
+  /*@media (min-width: 900px) {
+    .column-narrow {
+      width: 30%;
+      float: left;
+
+    }
+  }
+    .column-wide {
+      width: 70%;
+      float: left;
+      padding-left: 20px;
+    }
+  }
+  @media (max-width: 899px) {
+    header {
+    text-align: center;
+
+  }
+  .profile-img {
+    width: 200px;
+   }
+  }       */

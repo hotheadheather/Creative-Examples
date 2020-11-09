@@ -1,0 +1,153 @@
+<!Doctype html>
+<!-- This is a random image generator with JQuery implemented-->
+<html lang ="en">
+<html>
+  <head>
+    <meta charset = "utf-8">
+
+<script src="javascript.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+<h1> Random Image Generator and jQuery Effects </h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+<!-- This is the drop down-->
+  $("#flip").click(function(){
+     $("#panel").slideToggle("slow");
+   });
+
+<!-- This changes colorof buttons-->
+$("#sub").hover(function(){
+$(this).css("background-color", "#D3BB58");
+}, function(){
+$(this).css("background-color", "#D35858");
+
+$("#sub2").hover(function(){
+$(this).css("background-color", "#CCDC43");
+}, function(){
+$(this).css("background-color", "#FF5733");
+
+$("#sub3").hover(function(){
+$(this).css("background-color", "#704C9B");
+}, function(){
+$(this).css("background-color", "#65DFBF");
+
+$("#sub4").hover(function(){
+$(this).css("background-color", "#F99DDA");
+}, function(){
+$(this).css("background-color", "#FCDEB0");
+
+$("#sub5").hover(function(){
+$(this).css("background-color", "#494C92");
+}, function(){
+$(this).css("background-color", "#84D8488");
+
+<!-- hides click me bait-->
+$("p").click(function(){
+   $(this).hide();
+
+
+<!-- colored squares fadein-->
+$("button").click(function(){
+$("#div1").fadeIn();
+$("#div2").fadeIn("slow");
+$("#div3").fadeIn(3000);
+$("#div4").fadeIn("slow");
+$("#div5").fadeIn();
+$("#div6").fadeIn(3000);
+
+
+
+<!-- green box animation-->
+$("button").click(function(){
+var div = $("div");
+div.animate({left: '100px'}, "slow");
+div.animate({fontSize: '3em'}, "slow");
+
+<!-- closing alert box-->
+
+$("#div3").mouseenter(function(){
+    alert("You touched my green square!");
+
+});
+});
+});
+});
+});
+});
+});
+});
+});
+});
+</script>
+
+
+<p>Click me </p>
+<p> and me</p>
+
+<div id="flip">Click me for more information</div>
+<div id="panel">JQuery is an API and a feature rich library that is compatible with all browsers. It is a light weight framework with less coding and debugging than Javascript.
+
+
+  <ul> 1.Press all the random image buttons.<br>
+       2. Click me and me.<br>
+       3. Click button for colors.<br>
+       4. Click me later and me too.<br>
+       5. Click the button for colors again <br>
+       6. Hover over 3rd square.<br>
+
+     </ul>
+</div>
+
+
+
+  </head>
+    <body>
+      <div>
+
+     <img id="foto" src="">
+
+  </div>
+
+  <div>
+      <input id="sub" class="btn-gray"
+             type="button" onclick="get_foto()" value="random image" />
+
+             <input id="sub2" class="btn-gray"
+                    type="button" onclick="get_foto()" value="random image" />
+
+                    <input id="sub3" class="btn-gray"
+                           type="button" onclick="get_foto()" value="random image" />
+
+                           <input id="sub4" class="btn-gray"
+                                  type="button" onclick="get_foto()" value="random image" />
+
+                                  <input id="sub5" class="btn-gray"
+                                         type="button" onclick="get_foto()" value="random image" />
+      </div>
+
+      <button>Click button for colors </button>
+
+
+      <div class="squares">
+
+      <div id="div1" style="width:80px;height:80px;display:none;background-color:#CCDC43;"></div><br>
+      <div id="div2" style="width:80px;height:80px;display:none;background-color:#D3BB58;"></div><br>
+      <div id="div3" style="width:80px;height:80px;display:none;background-color:#CCDC43;"></div><br>
+      <div style="background:#98bf21;height:100px;width:200px;position:absolute;">GREEN</div>
+      <div id="div4" style="width:80px;height:80px;display:none;background-color:#D35858;"></div><br>
+      <div id="div5" style="width:80px;height:80px;display:none;background-color:#FF5733;"></div><br>
+      <div id="div6" style="width:80px;height:80px;display:none;background-color:#704C9B;"></div>
+     </div>
+
+     <p>Click me later</p>
+     <p>me too.</p>
+
+
+   </body>
+
+</html>
